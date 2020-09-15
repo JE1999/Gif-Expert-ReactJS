@@ -12,16 +12,12 @@ function App() {
     
       <Add setCategories={setCategories} />
 
-      <div className="container">
-
-        {categories.map(category => (
-          <ListGrid 
-            key={category} 
-            category={category} 
-          />
-        ))}
-
-      </div>
+      {categories.map(category => (
+        <ListGrid 
+          key={category} 
+          category={category} 
+        />
+      ))}
 
     </Header>
   );

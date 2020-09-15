@@ -20,7 +20,8 @@ export const ListGrid = ({ category }) =>{
     }
 
     return(
-        <>
+        <div className="container">
+        
             <h2 className="mt-3">{category}</h2>
 
             <div className="row d-flex justify-content-between">
@@ -35,7 +36,8 @@ export const ListGrid = ({ category }) =>{
                     </div>
                 ))}
             </div>
-        </>
+            
+        </div>
     );
 }
 
